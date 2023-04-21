@@ -1,5 +1,6 @@
 package paquete;
 
+
 public class Pronostico
 {
     private final Partido partido;
@@ -12,25 +13,35 @@ public class Pronostico
         this.equipo = equipo;
         this.resultado = resultado;
     }
+
+
     public boolean acierto()
     {
         ResultadoEnum x = partido.confirmarResultado(equipo);
         if (x.equals(resultado))
-        {
             return true;
-        } return false;
 
+        return false;
     }
-    public Partido getPartido() {
+
+    public Partido getPartido()
+    {
         return partido;
     }
-    public Equipo getEquipo() {
+
+    public Equipo getEquipo()
+    {
         return equipo;
     }
-    public ResultadoEnum getResultado() {
+
+    public ResultadoEnum getResultado()
+    {
         return resultado;
     }
-    public int getIdPartido() {
+
+
+    public int getIdPartido()
+    {
         return partido.getId();
     }
 
@@ -38,7 +49,9 @@ public class Pronostico
     public String toString()
     {
         if (resultado == ResultadoEnum.EMPATE)
-            return partido.toString() + "\n\ttPREDICCION: " + resultado + "\n";
+            return partido.toString() + "\n\tPREDICCION: " + resultado + "\n";
+
         return partido.toString() + "\n\tPREDICCION: " + equipo.toString() + " - " + resultado + "\n";
     }
+
 }

@@ -10,14 +10,20 @@ public class Equipo
         this.nombre = nombre;
         this.descripcion = descripcion;
     }
-    public String getNombre(){
+
+    public String getNombre()
+    {
         return nombre;
     }
-    public String getDescripcion() {
+
+    public String getDescripcion()
+    {
         return descripcion;
     }
+
     @Override
-    public String toString() {
-    return nombre;
+    public String toString()
+    {
+        return nombre;
     }
 }

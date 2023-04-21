@@ -1,5 +1,7 @@
 package paquete;
+
 import java.util.ArrayList;
+
 
 public class Persona
 {
@@ -16,14 +18,17 @@ public class Persona
     {
         pronosticos.add(x);
     }
+
     public String getNombre()
     {
         return nombre;
     }
+
     public ArrayList<Pronostico> getPronosticos()
     {
         return pronosticos;
     }
+
 
     public Pronostico getPronostico(int id)
     {
@@ -36,10 +41,10 @@ public class Persona
 
     public String toString()
     {
-        StringBuilder stb = new StringBuilder("NOMBRE: " + nombre + "/n");
+        StringBuilder stb = new StringBuilder("NOMBRE: " + nombre + "\n\t");
         for (Pronostico x : pronosticos)
         {
-            stb.append("-*- Pronostico del partido" + x.getIdPartido() + ": /n");
+            stb.append("-*- Pronostico del partido\t" + x.getIdPartido() + ": \n\t");
             stb.append(x.toString());
         }
         return stb.toString();
