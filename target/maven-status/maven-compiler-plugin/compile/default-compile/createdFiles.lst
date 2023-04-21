@@ -1,4 +1,5 @@
 paquete\Equipo.class
+paquete\Logica$1.class
 paquete\Logica.class
 PRODE.class
 paquete\ConfigFileErrorException.class
@@ -6,6 +7,7 @@ paquete\Pronostico.class
 paquete\Partido.class
 paquete\Datos.class
 paquete\ResultadoEnum.class
+PRODE$MiTarea.class
 paquete\Fase.class
 paquete\Persona.class
 paquete\Ronda.class
